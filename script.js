@@ -135,11 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }))
 
     const dragStart = (e) =>{
-        // console.log(e.target)
         draggedShip = e.target;
         draggedShipLength = draggedShip.childNodes.length;
-        // console.log(draggedShip);
-        // console.log(draggedShipLength);
     }
 
     const dragOver = (e) =>{
@@ -258,7 +255,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const computerGo = () => {
         let random = Math.floor(Math.random() * userSquares.length)
         if(!userSquares[random].classList.contains('boom')){
-            // userSquares[random].classList.add('boom');
             if(userSquares[random].classList.contains('destroyer')) aidestroyerCount++;
             if(userSquares[random].classList.contains('submarine')) aisubmarineCount++;
             if(userSquares[random].classList.contains('cruiser')) aicruiserCount++;
@@ -270,14 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             userSquares[random].classList.add('boom');
         }else {
             userSquares[random].classList.add('miss');
-            // computerGo();
         }
-        // else{
-            // userSquares[random].classList.add('miss');  
-            // computerGo()
-        // } 
-        // computerGo();
-
         currentPlayer = 'user';
         turnDisplay.innerHTML = 'Your Go'
     }   
@@ -353,6 +342,4 @@ document.addEventListener('DOMContentLoaded', () => {
         location.reload();
     }
     document.querySelector('#restart').addEventListener('click', restart);
-
-    
 })

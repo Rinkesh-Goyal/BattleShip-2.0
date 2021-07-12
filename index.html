@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fuggles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Battleship</title>
+</head>
+<body>
+   <main>
+    <!-- <header>
+        <div class="icon">
+            <img src="images\Black-pearl.png" alt="Logo" title="logo">
+        </div>
+        <div class="name">
+            Battle-Ship
+        </div>
+        <div class="instruction">
+            <button class="button instruction-button">
+                Instructions
+            </button>
+        </div>
+    </header> -->
+
+    <!-- <div class="instruction-container">
+        <div class="instruction-content">
+            <i class="fas fa-times close"></i>
+            <h3 style="text-align: center;">Instructions</h3>
+            
+            <p>Battleship (also Battleships or Sea Battle[1]) is a strategy type guessing game for two players. It is played on ruled grids (paper or board) on which each player's fleet of ships (including battleships) are marked. The locations of the fleets are concealed from the other player. Players alternate turns calling "shots" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.
+
+            Battleship is known worldwide as a pencil and paper game which dates from World War I. It was published by various companies as a pad-and-pencil game in the 1930s, and was released as a plastic board game by Milton Bradley in 1967. The game has spawned electronic versions, video games, smart device apps and a film.</p>
+        </div>  
+    </div> -->
+
+    <div class="container">
+        <div class="grid grid-user"></div>
+        <div class="grid grid-computer"></div>
+    </div>
+
+    <div class="hidden-info">
+        <button id="start" class="button">Start</button>
+        <button id="rotate" class="button">Rotate</button>
+        <button id="restart" class="button">Restart</button>
+        <h3 id="whose-go">Your Go</h3>
+        <h4 id="info"></h4>
+    </div>
+    <div class="grid-display">
+        <div class="destroyer-container ship" draggable="true" title="destroyer"><div id="destroyer-0"></div><div id="destroyer-1"></div></div>
+        <div class="submarine-container ship" draggable="true" title="submarine"><div id="submarine-0"></div><div id="submarine-1"></div><div id="submarine-2"></div></div>
+        <div class="cruiser-container ship" draggable="true" title="cruiser"><div id="cruiser-0"></div><div id="cruiser-1"></div><div id="cruiser-2"></div></div>
+        <div class="battleship-container ship" draggable="true" title="battleship"><div id="battleship-0"></div><div id="battleship-1"></div><div id="battleship-2"></div><div id="battleship-3"></div></div>
+        <div class="carrier-container ship" draggable="true" title="carrier"><div id="carrier-0"></div><div id="carrier-1"></div><div id="carrier-2"></div><div id="carrier-3"></div><div id="carrier-4"></div></div>
+    </div>
+
+    
+   </main> 
+   <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
